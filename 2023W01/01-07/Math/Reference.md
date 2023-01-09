@@ -1,5 +1,4 @@
 $$
-\huge
     \begin{align*}
         e^{i\pi} + 1 &= 0 \\
         E &= mc^2 \\
