@@ -1,9 +1,9 @@
 $$
-    \begin{align*}
-        e^{i\pi} + 1 &= 0 \\
-        E &= mc^2 \\
-        \int_{a}^{b}f'(x)\mathrm{d}x &= f(b) - f(a)
-    \end{align*}
+\begin{align*}
+    e^{i\pi} + 1 &= 0 \\
+    E &= mc^2 \\
+    \int_{a}^{b}f'(x)\mathrm{d}x &= f(b) - f(a)
+\end{align*}
 $$
 ---
 #### 10以内加法
