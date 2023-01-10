@@ -9,6 +9,8 @@
 \newcommand\Grid[1]{%
  \tikz[baseline=(char.base)]{%
   \draw[xstep=1ex,ystep=1ex,help lines] (-1ex,-1ex) grid (1ex,1ex);
+  \draw[help lines,densely dash dot]
+  (-1ex,-1ex) -- (1ex,1ex)  (-1ex,1ex) -- (1ex,-1ex);
   \node[inner sep=0pt] (char) at (0,0) {#1};
  }%
 }
