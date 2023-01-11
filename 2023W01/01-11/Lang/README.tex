@@ -1,0 +1,50 @@
+% !TeX program = xelatex
+\documentclass{article}
+\usepackage{xeCJK}
+\usepackage{tikz}
+\usepackage[outline]{contour}
+\setCJKmainfont{Kaiti SC}
+% \setCJKmainfont{STKaiti}
+
+\newcommand\Grid[1]{%
+ \tikz[baseline=(char.base)]{%
+  \draw[xstep=1ex,ystep=1ex,help lines] (-1ex,-1ex) grid (1ex,1ex);
+  \draw[help lines,densely dash dot]
+  (-1ex,-1ex) -- (1ex,1ex)  (-1ex,1ex) -- (1ex,-1ex);
+  \node[inner sep=0pt] (char) at (0,0) {#1};
+ }%
+}
+\pagenumbering{gobble}
+\begin{document}
+\begin{center}
+    \Huge 登鹳雀楼 \\
+\end{center}
+\begin{flushright}
+    \huge 唐 $\bullet$ 王之涣 \\
+\end{flushright}
+\begin{center}
+    \Huge 白日依山尽 \\
+    \Huge 黄河入海流 \\
+    \Huge 欲穷千里目 \\
+    \Huge 更上一层楼 \\
+\end{center}
+\hrule
+\begin{center}
+    \Huge \Grid{登}\Grid{鹳}\Grid{雀}\Grid{楼} \\
+\end{center}
+\begin{flushright}
+    \huge \Grid{唐} $\bullet$ \Grid{王}\Grid{之}\Grid{涣} \\
+\end{flushright}
+\begin{center}
+    \Huge \Grid{白}\Grid{日}\Grid{依}\Grid{山}\Grid{尽} \\
+    \Huge \Grid{黄}\Grid{河}\Grid{入}\Grid{海}\Grid{流} \\
+    \Huge \Grid{欲}\Grid{穷}\Grid{千}\Grid{里}\Grid{目} \\
+    \Huge \Grid{更}\Grid{上}\Grid{一}\Grid{层}\Grid{楼} \\
+\end{center}
+\hrule
+宁静、壮阔的景色，浅显、深刻的哲理 \\
+山、川、日、海。充满了动静、刚柔、冷暖、虚实、俯仰、远近、上下、顺逆的对称美感，画面以全景视角展现了既差异又统一的平面、立体几何结构 \\
+追求无止境的未知世界，是目标和结果 \\
+持续不间断的探索进取，是方法和过程 \\
+在此形成了目标和方法、结果和过程的统一
+\end{document}
