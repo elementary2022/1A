@@ -1,0 +1,53 @@
+% !TeX program = xelatex
+\documentclass{article}
+\usepackage{xeCJK}
+\usepackage{tikz}
+\usepackage[outline]{contour}
+\usepackage{graphicx}
+\graphicspath{ {./} }
+\setCJKmainfont{Kaiti SC}
+% \setCJKmainfont{Xingkai SC}
+% \setCJKmainfont{STKaiti}
+
+\newcommand\Grid[1]{%
+ \tikz[baseline=(char.base)]{%
+  \draw[xstep=1ex,ystep=1ex,help lines] (-1ex,-1ex) grid (1ex,1ex);
+  \draw[help lines,densely dash dot]
+  (-1ex,-1ex) -- (1ex,1ex)  (-1ex,1ex) -- (1ex,-1ex);
+  \node[inner sep=0pt] (char) at (0,0) {#1};
+ }%
+}
+\pagenumbering{gobble}
+\begin{document}
+\begin{center}
+    \Huge 敕勒歌 \\
+\end{center}
+\begin{flushright}
+    \huge 北朝 $\bullet$ 民歌 \\
+\end{flushright}
+\begin{center}
+    \Huge 敕勒川 \\
+    \Huge 阴山下 \\
+    \Huge 天似穹庐 \\
+    \Huge 笼盖四野 \\
+    \Huge 天苍苍 \\
+    \Huge 野茫茫 \\
+    \Huge 风吹草低见牛羊 \\
+\end{center}
+\hrule
+\begin{center}
+    \Huge \Grid{敕}\Grid{勒}\Grid{歌} \\
+\end{center}
+\begin{flushright}
+    \huge \Grid{北}\Grid{朝} $\bullet$ \Grid{民}\Grid{歌} \\
+\end{flushright}
+\begin{center}
+    \Huge \Grid{敕}\Grid{勒}\Grid{川} \\
+    \Huge \Grid{阴}\Grid{山}\Grid{下} \\
+    \Huge \Grid{天}\Grid{似}\Grid{穹}\Grid{庐} \\
+    \Huge \Grid{笼}\Grid{盖}\Grid{四}\Grid{野} \\
+    \Huge \Grid{天}\Grid{苍}\Grid{苍} \\
+    \Huge \Grid{野}\Grid{茫}\Grid{茫} \\
+    \Huge \Grid{风}\Grid{吹}\Grid{草}\Grid{低}\Grid{见}\Grid{牛}\Grid{羊} \\
+\end{center}
+\end{document}
