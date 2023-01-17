@@ -1,0 +1,47 @@
+% !TeX program = xelatex
+\documentclass{article}
+\usepackage{xeCJK}
+\usepackage{tikz}
+\usepackage[outline]{contour}
+\usepackage{graphicx}
+\graphicspath{ {./} }
+\setCJKmainfont{Kaiti SC}
+% \setCJKmainfont{Xingkai SC}
+% \setCJKmainfont{STKaiti}
+
+\newcommand\Grid[1]{%
+ \tikz[baseline=(char.base)]{%
+  \draw[xstep=1ex,ystep=1ex,help lines] (-1ex,-1ex) grid (1ex,1ex);
+  \draw[help lines,densely dash dot]
+  (-1ex,-1ex) -- (1ex,1ex)  (-1ex,1ex) -- (1ex,-1ex);
+  \node[inner sep=0pt] (char) at (0,0) {#1};
+ }%
+}
+\pagenumbering{gobble}
+\begin{document}
+\begin{center}
+    \Huge 咏鹅 \\
+\end{center}
+\begin{flushright}
+    \huge 唐 $\bullet$ 骆宾王 \\
+\end{flushright}
+\begin{center}
+    \Huge 鹅，鹅，鹅 \\
+    \Huge 曲项向天歌 \\
+    \Huge 白毛浮绿水 \\
+    \Huge 红掌拨清波 \\
+\end{center}
+\hrule
+\begin{center}
+    \Huge \Grid{咏}\Grid{鹅} \\
+\end{center}
+\begin{flushright}
+    \huge \Grid{唐} $\bullet$ \Grid{骆}\Grid{宾}\Grid{王} \\
+\end{flushright}
+\begin{center}
+    \Huge \Grid{鹅}\Grid{鹅}\Grid{鹅} \\
+    \Huge \Grid{曲}\Grid{项}\Grid{向}\Grid{天}\Grid{歌} \\
+    \Huge \Grid{白}\Grid{毛}\Grid{浮}\Grid{绿}\Grid{水} \\
+    \Huge \Grid{红}\Grid{掌}\Grid{拨}\Grid{清}\Grid{波} \\
+\end{center}
+\end{document}
