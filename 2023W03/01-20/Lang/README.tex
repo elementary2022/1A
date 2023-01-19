@@ -1,0 +1,49 @@
+% !TeX program = xelatex
+\documentclass{article}
+\usepackage{xeCJK}
+\usepackage{tikz}
+\usepackage[outline]{contour}
+\usepackage{graphicx}
+\graphicspath{ {./} }
+\setCJKmainfont{Kaiti SC}
+% \setCJKmainfont{Xingkai SC}
+% \setCJKmainfont{STKaiti}
+
+\newcommand\Grid[1]{\tikz[baseline=(char.base)]{\draw[xstep=1ex,ystep=1ex,help lines] (-1ex,-1ex) grid (1ex,1ex);
+  \draw[help lines,densely dash dot]
+  (-1ex,-1ex) -- (1ex,1ex)  (-1ex,1ex) -- (1ex,-1ex);
+  \node[inner sep=0pt] (char) at (0,0) {#1}; }}
+\pagenumbering{gobble}
+\begin{document}
+\begin{center}
+    \Huge 凉州词 \\
+\end{center}
+\begin{flushright}
+    \huge 唐 $\bullet$ 王之涣 \\
+\end{flushright}
+\begin{center}
+    \Huge 黄河远上白云间 \\
+    \Huge 一片孤城万仞山 \\
+    \Huge 羌笛何须怨杨柳 \\
+    \Huge 春风不度玉门关 \\
+\end{center}
+\hrule
+\begin{center}
+    \Huge \Grid{凉}\Grid{州}\Grid{词} \\
+\end{center}
+\begin{flushright}
+    \huge \Grid{唐} $\bullet$ \Grid{王}\Grid{之}\Grid{涣} \\
+\end{flushright}
+\begin{center}
+    \Huge \Grid{黄}\Grid{河}\Grid{远}\Grid{上}\Grid{白}\Grid{云}\Grid{间} \\
+    \Huge \Grid{一}\Grid{片}\Grid{孤}\Grid{城}\Grid{万}\Grid{仞}\Grid{山} \\
+    \Huge \Grid{羌}\Grid{笛}\Grid{何}\Grid{须}\Grid{怨}\Grid{杨}\Grid{柳} \\
+    \Huge \Grid{春}\Grid{风}\Grid{不}\Grid{度}\Grid{玉}\Grid{门}\Grid{关} \\
+\end{center}
+% \hrule
+% \newpage
+% \begin{figure}
+%     \centering
+%     \makebox[0pt]{\includegraphics[width=0.9\paperwidth]{image.jpg}}
+% \end{figure}
+\end{document}
