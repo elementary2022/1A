@@ -52,4 +52,4 @@ popd
 pdflatex "${_problem_tex}"
 pdflatex "${_reference_tex}"
 
-echo '![visual](problem.jpg)' >> README.md
+echo '![visual](problem.jpg)' > README.md
