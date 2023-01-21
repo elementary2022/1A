@@ -1,0 +1,53 @@
+% !TeX program = xelatex
+\documentclass{article}
+\usepackage{xeCJK}
+\usepackage{tikz}
+\usepackage[outline]{contour}
+\usepackage{graphicx}
+\graphicspath{ {./} }
+\setCJKmainfont{Kaiti SC}
+% \setCJKmainfont{Xingkai SC}
+% \setCJKmainfont{STKaiti}
+
+\newcommand\Grid[1]{%
+ \tikz[baseline=(char.base)]{%
+  \draw[xstep=1ex,ystep=1ex,help lines] (-1ex,-1ex) grid (1ex,1ex);
+  \draw[help lines,densely dash dot]
+  (-1ex,-1ex) -- (1ex,1ex)  (-1ex,1ex) -- (1ex,-1ex);
+  \node[inner sep=0pt] (char) at (0,0) {#1};
+ }%
+}
+\pagenumbering{gobble}
+\begin{document}
+\begin{center}
+    \Huge 元日 \\
+\end{center}
+\begin{flushright}
+    \huge 宋 $\bullet$ 王安石 \\
+\end{flushright}
+\begin{center}
+    \Huge 爆竹声中一岁除 \\
+    \Huge 春风送暖入屠苏 \\
+    \Huge 千门万户曈曈日 \\
+    \Huge 总把新桃换旧符 \\
+\end{center}
+\hrule
+\begin{center}
+    \Huge \Grid{元}\Grid{日} \\
+\end{center}
+\begin{flushright}
+    \huge \Grid{宋} $\bullet$ \Grid{王}\Grid{安}\Grid{石} \\
+\end{flushright}
+\begin{center}
+    \Huge \Grid{爆}\Grid{竹}\Grid{声}\Grid{中}\Grid{一}\Grid{岁}\Grid{除} \\
+    \Huge \Grid{春}\Grid{风}\Grid{送}\Grid{暖}\Grid{入}\Grid{屠}\Grid{苏} \\
+    \Huge \Grid{千}\Grid{门}\Grid{万}\Grid{户}\Grid{曈}\Grid{曈}\Grid{日} \\
+    \Huge \Grid{总}\Grid{把}\Grid{新}\Grid{桃}\Grid{换}\Grid{旧}\Grid{符} \\
+\end{center}
+% \hrule
+% \newpage
+% \begin{figure}
+%     \centering
+%     \makebox[0pt]{\includegraphics[width=0.9\paperwidth]{image.jpg}}
+% \end{figure}
+\end{document}
