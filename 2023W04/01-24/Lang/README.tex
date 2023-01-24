@@ -1,0 +1,53 @@
+% !TeX program = xelatex
+\documentclass{article}
+\usepackage{xeCJK}
+\usepackage{tikz}
+\usepackage[outline]{contour}
+\usepackage{graphicx}
+\graphicspath{ {./} }
+\setCJKmainfont{Kaiti SC}
+% \setCJKmainfont{Xingkai SC}
+% \setCJKmainfont{STKaiti}
+
+\newcommand\Grid[1]{%
+ \tikz[baseline=(char.base)]{%
+  \draw[xstep=1ex,ystep=1ex,help lines] (-1ex,-1ex) grid (1ex,1ex);
+  \draw[help lines,densely dash dot]
+  (-1ex,-1ex) -- (1ex,1ex)  (-1ex,1ex) -- (1ex,-1ex);
+  \node[inner sep=0pt] (char) at (0,0) {#1};
+ }%
+}
+\pagenumbering{gobble}
+\begin{document}
+\begin{center}
+    \Huge 凉州词 \\
+\end{center}
+\begin{flushright}
+    \huge 唐 $\bullet$ 王翰 \\
+\end{flushright}
+\begin{center}
+    \Huge 葡萄美酒夜光杯 \\
+    \Huge 欲饮琵琶马上催 \\
+    \Huge 醉卧沙场君莫笑 \\
+    \Huge 古来征战几人回 \\
+\end{center}
+\hrule
+\begin{center}
+    \Huge \Grid{凉}\Grid{州}\Grid{词} \\
+\end{center}
+\begin{flushright}
+    \huge \Grid{唐} $\bullet$ \Grid{王}\Grid{翰} \\
+\end{flushright}
+\begin{center}
+    \Huge \Grid{葡}\Grid{萄}\Grid{美}\Grid{酒}\Grid{夜}\Grid{光}\Grid{杯} \\
+    \Huge \Grid{欲}\Grid{饮}\Grid{琵}\Grid{琶}\Grid{马}\Grid{上}\Grid{催} \\
+    \Huge \Grid{醉}\Grid{卧}\Grid{沙}\Grid{场}\Grid{君}\Grid{莫}\Grid{笑} \\
+    \Huge \Grid{古}\Grid{来}\Grid{征}\Grid{战}\Grid{几}\Grid{人}\Grid{回} \\
+\end{center}
+% \hrule
+% \newpage
+% \begin{figure}
+%     \centering
+%     \makebox[0pt]{\includegraphics[width=0.9\paperwidth]{image.jpg}}
+% \end{figure}
+\end{document}
