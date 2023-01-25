@@ -1,0 +1,53 @@
+% !TeX program = xelatex
+\documentclass{article}
+\usepackage{xeCJK}
+\usepackage{tikz}
+\usepackage[outline]{contour}
+\usepackage{graphicx}
+\graphicspath{ {./} }
+\setCJKmainfont{Kaiti SC}
+% \setCJKmainfont{Xingkai SC}
+% \setCJKmainfont{STKaiti}
+
+\newcommand\Grid[1]{%
+ \tikz[baseline=(char.base)]{%
+  \draw[xstep=1ex,ystep=1ex,help lines] (-1ex,-1ex) grid (1ex,1ex);
+  \draw[help lines,densely dash dot]
+  (-1ex,-1ex) -- (1ex,1ex)  (-1ex,1ex) -- (1ex,-1ex);
+  \node[inner sep=0pt] (char) at (0,0) {#1};
+ }%
+}
+\pagenumbering{gobble}
+\begin{document}
+\begin{center}
+    \Huge 芙蓉楼送辛渐 \\
+\end{center}
+\begin{flushright}
+    \huge 唐 $\bullet$ 王昌龄 \\
+\end{flushright}
+\begin{center}
+    \Huge 寒雨连江夜入吴 \\
+    \Huge 平明送客楚山孤 \\
+    \Huge 洛阳亲友如相问 \\
+    \Huge 一片冰心在玉壶 \\
+\end{center}
+\hrule
+\begin{center}
+    \Huge \Grid{芙}\Grid{蓉}\Grid{楼}\Grid{送}\Grid{辛}\Grid{渐} \\
+\end{center}
+\begin{flushright}
+    \huge \Grid{唐} $\bullet$ \Grid{王}\Grid{昌}\Grid{龄} \\
+\end{flushright}
+\begin{center}
+    \Huge \Grid{寒}\Grid{雨}\Grid{连}\Grid{江}\Grid{夜}\Grid{入}\Grid{吴} \\
+    \Huge \Grid{平}\Grid{明}\Grid{送}\Grid{客}\Grid{楚}\Grid{山}\Grid{孤} \\
+    \Huge \Grid{洛}\Grid{阳}\Grid{亲}\Grid{友}\Grid{如}\Grid{相}\Grid{问} \\
+    \Huge \Grid{一}\Grid{片}\Grid{冰}\Grid{心}\Grid{在}\Grid{玉}\Grid{壶} \\
+\end{center}
+% \hrule
+% \newpage
+% \begin{figure}
+%     \centering
+%     \makebox[0pt]{\includegraphics[width=0.9\paperwidth]{image.jpg}}
+% \end{figure}
+\end{document}
