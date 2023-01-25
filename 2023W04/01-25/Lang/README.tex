@@ -1,0 +1,53 @@
+% !TeX program = xelatex
+\documentclass{article}
+\usepackage{xeCJK}
+\usepackage{tikz}
+\usepackage[outline]{contour}
+\usepackage{graphicx}
+\graphicspath{ {./} }
+\setCJKmainfont{Kaiti SC}
+% \setCJKmainfont{Xingkai SC}
+% \setCJKmainfont{STKaiti}
+
+\newcommand\Grid[1]{%
+ \tikz[baseline=(char.base)]{%
+  \draw[xstep=1ex,ystep=1ex,help lines] (-1ex,-1ex) grid (1ex,1ex);
+  \draw[help lines,densely dash dot]
+  (-1ex,-1ex) -- (1ex,1ex)  (-1ex,1ex) -- (1ex,-1ex);
+  \node[inner sep=0pt] (char) at (0,0) {#1};
+ }%
+}
+\pagenumbering{gobble}
+\begin{document}
+\begin{center}
+    \Huge 出塞 \\
+\end{center}
+\begin{flushright}
+    \huge 唐 $\bullet$ 王昌龄 \\
+\end{flushright}
+\begin{center}
+    \Huge 秦时明月汉时关 \\
+    \Huge 万里长征人未还 \\
+    \Huge 但使龙城飞将在 \\
+    \Huge 不教胡马度阴山 \\
+\end{center}
+\hrule
+\begin{center}
+    \Huge \Grid{出}\Grid{塞} \\
+\end{center}
+\begin{flushright}
+    \huge \Grid{唐} $\bullet$ \Grid{王}\Grid{昌}\Grid{龄} \\
+\end{flushright}
+\begin{center}
+    \Huge \Grid{秦}\Grid{时}\Grid{明}\Grid{月}\Grid{汉}\Grid{时}\Grid{关} \\
+    \Huge \Grid{万}\Grid{里}\Grid{长}\Grid{征}\Grid{人}\Grid{未}\Grid{还} \\
+    \Huge \Grid{但}\Grid{使}\Grid{龙}\Grid{城}\Grid{飞}\Grid{将}\Grid{在} \\
+    \Huge \Grid{不}\Grid{教}\Grid{胡}\Grid{马}\Grid{度}\Grid{阴}\Grid{山} \\
+\end{center}
+% \hrule
+% \newpage
+% \begin{figure}
+%     \centering
+%     \makebox[0pt]{\includegraphics[width=0.9\paperwidth]{image.jpg}}
+% \end{figure}
+\end{document}
