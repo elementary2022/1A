@@ -9,4 +9,3 @@
 - Danny: Mom, What do you like?
 - MOTHER: I like oranges
 - Danny: Let's play, touch your face, touch your nose, touch your mouth, touch your eyes, touch your arms, touch your foot 
-- Lion: 
