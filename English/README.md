@@ -17,3 +17,4 @@
 - [01-24](../2023W04/01-24/English/README.md)
 - [01-25](../2023W04/01-25/English/README.md)
 - [01-26](../2023W04/01-26/English/README.md)
+- [01-27](../2023W04/01-27/English/README.md)
