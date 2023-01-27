@@ -1,0 +1,13 @@
+- Lion: Good morning, Danny
+- Danny: Hello/Good morning, Lion
+- Lion: Nice to meet you
+- Danny: This is my father, this is mother, this is my grandmother, this is my brother. I also have two aunts, two cousins are tall, two cousins are short, they are all cute, Do you like apples?
+- Lion: Yes, please
+- Danny: How many apples do you want?
+- Lion: Just one, please
+- Danny: Here you are
+- Lion: Thank you
+- Danny: Mom, What do you like?
+- MOTHER: I like oranges
+- Danny: Let's play, touch your face
+- Lion: 
