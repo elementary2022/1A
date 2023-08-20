@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1692492509 "/Users/puppy/workspace/elementary2022/1A/2023W33/08-20/Lang/README.tex" "README.pdf" "README" 1692492509
-  "/Users/puppy/workspace/elementary2022/1A/2023W33/08-20/Lang/README.tex" 1692492508 1577 d45c17c094b4fecd5eb308f06872d932 ""
+["pdflatex"] 1692498455 "/Users/puppy/workspace/elementary2022/1A/2023W33/08-20/Lang/README.tex" "README.pdf" "README" 1692498455
+  "/Users/puppy/workspace/elementary2022/1A/2023W33/08-20/Lang/README.tex" 1692498454 1577 977b8f3c2eeebb4aac5e6ec379554dba ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -103,8 +103,8 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1674252539 2826447 a2f928d2f77434a280081efcc6a1eaa8 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "README.aux" 1692492509 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "README.tex" 1692492508 1577 d45c17c094b4fecd5eb308f06872d932 ""
+  "README.aux" 1692498455 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "README.tex" 1692498454 1577 977b8f3c2eeebb4aac5e6ec379554dba ""
   (generated)
   "README.aux"
   "README.log"
