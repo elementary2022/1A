@@ -1,0 +1,53 @@
+% !TeX program = xelatex
+\documentclass{article}
+\usepackage{xeCJK}
+\usepackage{tikz}
+\usepackage[outline]{contour}
+\usepackage{graphicx}
+\graphicspath{ {./} }
+\setCJKmainfont{Kaiti SC}
+% \setCJKmainfont{Xingkai SC}
+% \setCJKmainfont{STKaiti}
+
+\newcommand\Grid[1]{%
+ \tikz[baseline=(char.base)]{%
+  \draw[xstep=1ex,ystep=1ex,help lines] (-1ex,-1ex) grid (1ex,1ex);
+  \draw[help lines,densely dash dot]
+  (-1ex,-1ex) -- (1ex,1ex)  (-1ex,1ex) -- (1ex,-1ex);
+  \node[inner sep=0pt] (char) at (0,0) {#1};
+ }%
+}
+\pagenumbering{gobble}
+\begin{document}
+\begin{center}
+    \Huge 送孟浩然之广陵 \\
+\end{center}
+\begin{flushright}
+    \huge 唐 $\bullet$ 李白 \\
+\end{flushright}
+\begin{center}
+    \Huge 故人西辞黄鹤楼 \\
+    \Huge 烟花三月下扬州 \\
+    \Huge 孤帆远影碧空尽 \\
+    \Huge 惟见长江天际流 \\
+\end{center}
+\hrule
+\begin{center}
+    \Huge \Grid{送}\Grid{孟}\Grid{浩}\Grid{然}\Grid{之}\Grid{广}\Grid{陵} \\
+\end{center}
+\begin{flushright}
+    \huge \Grid{唐} $\bullet$ \Grid{李}\Grid{白} \\
+\end{flushright}
+\begin{center}
+    \Huge \Grid{故}\Grid{人}\Grid{西}\Grid{辞}\Grid{黄}\Grid{鹤}\Grid{楼} \\
+    \Huge \Grid{烟}\Grid{花}\Grid{三}\Grid{月}\Grid{下}\Grid{扬}\Grid{州} \\
+    \Huge \Grid{孤}\Grid{帆}\Grid{远}\Grid{影}\Grid{碧}\Grid{空}\Grid{尽} \\
+    \Huge \Grid{惟}\Grid{见}\Grid{长}\Grid{江}\Grid{天}\Grid{际}\Grid{流} \\
+\end{center}
+% \hrule
+% \newpage
+% \begin{figure}
+%     \centering
+%     \makebox[0pt]{\includegraphics[width=0.9\paperwidth]{image.jpg}}
+% \end{figure}
+\end{document}
